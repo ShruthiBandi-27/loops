@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let info = [
+            {
+                "id" : 1,
+                "name" : "Shruthi",
+                "course" : "full stack developement",
+                "Dept" : "CSE"
+            },
+            {
+                "id" : 2,
+                "name" : "Sandeep",
+                "course" : "Networking",
+                "Dept": "ECE"
+            }
+        ];
+        
+        console.log("Using for");
+        //for
+        for(let i = 0; i < info.length; i++){
+            console.log(`ID : ${info[i].id}`);
+            console.log(`Name : ${info[i].name}`);
+            console.log(`Course : ${info[i].course}`);
+            console.log(`Dept : ${info[i].Dept}`);
+        }
+        //console.log("\n");
+        console.log("\nUsing for in");
+        
+        //for in 
+        for(let i in info){
+            console.log(`ID : ${info[i].id}`);
+            console.log(`Name : ${info[i].name}`);
+            console.log(`Course : ${info[i].course}`);
+            console.log(`Dept : ${info[i].Dept}`);
+        }
+
+        console.log("\nUsing for each");
+        //for each
+        info.forEach(function(i){
+            console.log(`ID : ${i.id}`);
+            console.log(`Name : ${i.name}`);
+            console.log(`Course : ${i.course}`);
+            console.log(`Dept : ${i.Dept}`);
+        })
+
+        console.log("\nUsing for of");
+        for(let i of info){
+            console.log(`ID : ${i.id}`);
+            console.log(`Name : ${i.name}`);
+            console.log(`Course : ${i.course}`);
+            console.log(`Dept : ${i.Dept}`);
+        }
+    </script>
+</body>
+</html>
